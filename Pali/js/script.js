@@ -8,3 +8,17 @@ const userWord = prompt('Inserisci una parola');
 // Creo la variabile risultato finale che richiama la funzione
 const reverseUserWord = revertWord(userWord);
 
+// -------- FUNCTION REVERSE WORD ----------
+
+function revertWord (word) {
+
+    let reverseWord = '';
+    for (let i = word.length - 1; i >= 0; i--) {
+        const thisLetter = word[i];
+        console.log(thisLetter);
+        
+        reverseWord += thisLetter;
+    }
+    return reverseWord;
+
+}
