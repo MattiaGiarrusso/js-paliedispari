@@ -51,3 +51,38 @@ alert(randomNumber);
 function getRndInteger(min, max) {
     return Math.floor(Math.random() * (max - min + 1) ) + min;
 }
+
+
+// ------- SOMMA DEI NUMERI --------
+
+// Creo la variabile somma che richiama la funzione sommaNumeri
+let sumNum = sommaNumeri(userNumber, randomNumber);
+console.log(sumNum);
+alert(sumNum);
+
+let sumMessage;
+if(sumNum % 2 === 0) {
+    sumMessage = sumNum + ' è pari';
+} else {
+    sumMessage = sumNum + ' è dispari';
+}
+console.log(sumMessage);
+alert(sumMessage);
+
+// Creo la variabile messaggio finale per verificare se ha vinto o ha perso
+let finalMessage;
+if(sumNum % 2 === 0 && userChoise === 'pari') {
+    finalMessage = 'Hai vinto';
+} else if (sumNum % 2 !== 0 && userChoise === 'dispari') {
+    finalMessage = 'Hai vinto'; 
+} else {
+    finalMessage = 'Hai perso';
+}
+console.log(finalMessage);
+alert(finalMessage);
+
+//-------- FUNCTION SUM ---------
+function sommaNumeri(num1, num2) {
+    const sum = num1 + num2;
+    return sum;
+}
