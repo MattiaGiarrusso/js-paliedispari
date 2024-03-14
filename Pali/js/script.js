@@ -7,6 +7,18 @@ const userWord = prompt('Inserisci una parola');
 
 // Creo la variabile risultato finale che richiama la funzione
 const reverseUserWord = revertWord(userWord);
+console.log(reverseUserWord);
+
+// Creo la variabile messaggio per confermare se la parola è palindroma
+let userMessage;
+if (reverseUserWord === userWord) {
+    userMessage = 'La parola ' + userWord + ' è palindroma';
+} else {
+    userMessage = 'La parola ' + userWord + ' non è palindroma';
+}
+console.log(userMessage);
+alert(userMessage);
+
 
 // -------- FUNCTION REVERSE WORD ----------
 
