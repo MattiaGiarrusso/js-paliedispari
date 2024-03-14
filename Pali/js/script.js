@@ -5,3 +5,6 @@
 // Chiedo all’utente di inserire una parola
 const userWord = prompt('Inserisci una parola');
 
+// Creo la variabile risultato finale che richiama la funzione
+const reverseUserWord = revertWord(userWord);
+
