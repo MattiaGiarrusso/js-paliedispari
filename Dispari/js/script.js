@@ -24,7 +24,8 @@ console.log(userMessage);
 alert(userMessage);
 
 
-// FUNCTION EVEN OR ODD
+// ------ FUNCTION EVEN OR ODD -------
+
 // creo la funzione per stabilire se userNumber è pari o dispari
 function evenOrOdd(number) {
 
@@ -37,4 +38,16 @@ function evenOrOdd(number) {
     }
 
     return numEvenOrOdd;
+}
+
+
+//------ FUNCTION RANDOM NUMBER --------
+
+const randomNumber = getRndInteger(1, 5);
+console.log(randomNumber);
+alert(randomNumber);
+
+// Copio la funzione per generare random dei numeri tra 1 e 5
+function getRndInteger(min, max) {
+    return Math.floor(Math.random() * (max - min + 1) ) + min;
 }
