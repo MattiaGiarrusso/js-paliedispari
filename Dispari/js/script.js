@@ -4,3 +4,37 @@
 // Stabiliamo se la somma dei due numeri è pari o dispari (usando una funzione)
 // Dichiariamo chi ha vinto.
 
+// creo il prompt per chiedere all'utente cosa uscirà come somma finale: pari o dispari? 
+const userChoise = prompt('La somma finale sarà pari o dispari?');
+console.log(userChoise);
+
+// creo il prompt per chiedere un numero pari o dispari all'utente
+const userNumber = parseInt(prompt('Dimmi un numero tra 1 e 5'));
+
+// creo la variabile per comunicare se il numero scelto dall'utente è pari o dispari
+let userNumberEvenOrOdd = evenOrOdd(userNumber);
+console.log(userNumberEvenOrOdd);
+let userMessage;
+if(userNumberEvenOrOdd === 'pari') {
+    userMessage = userNumber + ' è pari';
+} else {
+    userMessage = userNumber + ' è dispari';
+}
+console.log(userMessage);
+alert(userMessage);
+
+
+// FUNCTION EVEN OR ODD
+// creo la funzione per stabilire se userNumber è pari o dispari
+function evenOrOdd(number) {
+
+    let numEvenOrOdd;
+    
+    if(number % 2 === 0) {
+        numEvenOrOdd = 'pari';
+    } else {
+        numEvenOrOdd = 'dispari';
+    }
+
+    return numEvenOrOdd;
+}
